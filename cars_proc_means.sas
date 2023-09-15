@@ -1,3 +1,5 @@
+/* added a comment from github.com to indicate the beginning of the file */
+
 %let ds=sashelp.cars;
 %let classvar=make;
 %let varvar=mpg_city;
@@ -14,3 +16,5 @@ class &classvar.;
 var &varvar.;
 output out=&out._summary min=min1 max=max1 mean=mean1;
 run;
+
+/* added a comment from github.com to indicate the end of the file */
