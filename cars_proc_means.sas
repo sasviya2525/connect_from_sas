@@ -9,8 +9,9 @@ var &varvar.;
 output out=&out._means;
 run;
 
+/* adding another variable for median */
 proc summary data=&ds.;
 class &classvar.;
 var &varvar.;
-output out=&out._summary min=min1 max=max1 mean=mean1;
+output out=&out._summary min=min1 max=max1 mean=mean1 median=median1;
 run;
