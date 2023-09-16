@@ -32,8 +32,14 @@ datalines;
 50 200 4.3
 100 1000 3.95
 60 510 4.0
+80 1000 3.9
+100 1200 4.1
+30 380 4.0
 ;
 run;
+
+/*calculate  the cars that meet the monthly budget and distance requirement
+based on mpg_city */
 
 proc sql;
 create table cars_mpg  as
